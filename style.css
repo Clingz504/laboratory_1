@@ -1,0 +1,187 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a font-family and background color to the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+    line-height: 1.6;
+  }
+  
+  /* Styling the header */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Profile pictures in header */
+  .profile-pictures {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    /* Ensures images are well cropped to fit the circle */
+  }
+  
+  /* Main title in the header */
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling the sections */
+  section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: coral;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Styling the list */
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    flex: 1 0 200px; /* Ensures project items are responsive with a minimum width */
+    height: 400px;
+    text-align: center; /* Centers text inside the project item */
+    border: 2px solid gray; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    position: relative; /* Positions text at the bottom of the item */
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Slightly enlarges project item on hover */
+}
+
+.text {
+    padding: 10px;
+    width: 100%;
+    background-color: gray; 
+    border-radius: 0 0 8px 8px;
+    color: #000000; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#contact .form-container {
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  caret-color: rgb(254, 252, 252);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  border: 2px solid gray;
+  caret-color: gray;
+  color: #fbf8f8; 
+}
+
+.contact-form button {
+  border: none;
+  outline: none;
+  background-color: gray; 
+  color: #ffffff; 
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.contact-form button:hover {
+  background-color: #c0c0c0; 
+}
+
+.contact-form textarea {
+  resize: none;
+}
+  /* Styling the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+   
