@@ -177,11 +177,23 @@
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 20px;
+    position: absolute;
     width: 100%;
   }
   
+  .socials {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials {
+    padding: 10px 0 10px;
+}
+footer > p {
+    font-size: .8rem;
+}
   
    
